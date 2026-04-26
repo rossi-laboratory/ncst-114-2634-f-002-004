@@ -34,8 +34,8 @@ All four delivery goals have been achieved and verified on the benchmark dataset
 
 | # | Goal | Metric | Threshold | **Measured** | Status |
 |---|------|--------|-----------|--------------|--------|
-| 1 | Data preprocessing & 3D point-track construction | Tracking success rate | ≥ 90% | **92.4%** | ✅ [Met](./4D%20Reconstruction/results/Result_Tracking.md) |
-| 2 | 4D temporal modeling | Temporal prediction error | ≤ 10% | **8.7%** | ✅ [Met](./4D%20Reconstruction/results/Temporal_Prediction.md) |
+| 1 | Data preprocessing & 3D point-track construction | Tracking success rate | ≥ 90% | **92.4%** | ✅ [Met](./results/Result_Tracking.md) |
+| 2 | 4D temporal modeling | Temporal prediction error | ≤ 10% | **8.7%** | ✅ [Met](./results/Temporal_Prediction.md) |
 | 3 | 4D model construction | Cross-time ID-switch rate | ≤ 8% | **6.3%** | On-going |
 | 4 | Model evaluation | Geometric reconstruction error (Chamfer Distance) | ≤ 5% | **4.1%** | On-going |
 
