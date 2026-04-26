@@ -1,0 +1,12 @@
+# Evaluation thresholds and outputs.
+thresholds:
+  tracking_success_rate: 0.90
+  temporal_prediction_error: 0.10
+  id_switch_rate: 0.08
+  chamfer_distance: 0.05
+
+checkpoint_path: "checkpoints/best_model.pth"
+output_dir: "results/"
+benchmark_dir: "data/benchmark"
+device: "cuda"
+batch_size: 4

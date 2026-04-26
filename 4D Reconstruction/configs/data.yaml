@@ -1,0 +1,31 @@
+# Dataset configuration.
+root_dir: "data/"
+dataset: "epic_kitchens"
+split: [0.8, 0.1, 0.1]   # train / val / test
+
+num_frames: 16            # T per clip
+num_points: 1024          # N tracked points
+grid_stride: 8            # pixel stride for grid initialization
+frame_size: [224, 224]
+
+# Camera intrinsics (default; override per-video if available).
+camera:
+  fx: 525.0
+  fy: 525.0
+  cx: 112.0
+  cy: 112.0
+
+# Depth estimation.
+depth:
+  model_name: "depth_anything_v2"  # "zoedepth" / "midas" as fallback
+  encoder: "vitl"
+  cache_dir: "data/processed"
+
+# Augmentation (train only).
+augmentation:
+  random_occlusion: true
+  occlusion_prob: 0.3
+  color_jitter: 0.2
+  horizontal_flip: false  # 不翻轉，避免破壞點 ID 一致性
+
+benchmark_dir: "data/benchmark"

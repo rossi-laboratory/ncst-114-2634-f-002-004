@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "tracking_success_rate": 0.924,
+    "temporal_error": 0.087,
+    "id_switch_rate": 0.063,
+    "chamfer_distance": 0.041,
+    "pass_ts": true,
+    "pass_te": true,
+    "pass_ids": true,
+    "pass_cd": true
+  },
+  "per_video": {
+    "P01_01": {
+      "chamfer_distance": 0.039,
+      "temporal_error": 0.082,
+      "id_switch_rate": 0.058,
+      "tracking_success_rate": 0.931,
+      "point_tracking_error": 0.046
+    },
+    "P03_05": {
+      "chamfer_distance": 0.043,
+      "temporal_error": 0.091,
+      "id_switch_rate": 0.067,
+      "tracking_success_rate": 0.918,
+      "point_tracking_error": 0.052
+    },
+    "P04_12": {
+      "chamfer_distance": 0.040,
+      "temporal_error": 0.085,
+      "id_switch_rate": 0.061,
+      "tracking_success_rate": 0.927,
+      "point_tracking_error": 0.048
+    },
+    "P06_07": {
+      "chamfer_distance": 0.042,
+      "temporal_error": 0.090,
+      "id_switch_rate": 0.066,
+      "tracking_success_rate": 0.920,
+      "point_tracking_error": 0.050
+    }
+  },
+  "thresholds": {
+    "tracking_success_rate": 0.90,
+    "temporal_error": 0.10,
+    "id_switch_rate": 0.08,
+    "chamfer_distance": 0.05
+  },
+  "phase": "phase2_finetuned",
+  "evaluated_at": "2026-04-26"
+}

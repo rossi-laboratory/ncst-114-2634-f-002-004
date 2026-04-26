@@ -1,0 +1,38 @@
+# Training loop hyperparameters.
+defaults:
+  - model: model
+  - data: data
+  - _self_
+
+device: "cuda"
+seed: 42
+epochs: 100
+batch_size: 8
+num_workers: 4
+lr: 1.0e-4
+weight_decay: 1.0e-5
+grad_clip: 1.0
+warmup_steps: 1000
+
+checkpoint_dir: "checkpoints/"
+log_interval: 50
+eval_interval: 5
+
+use_wandb: true
+wandb_project: "4d-reconstruction"
+wandb_run_name: null
+
+scheduler:
+  type: "cosine"
+  min_lr: 1.0e-6
+
+loss:
+  l1_weight: 1.0
+  temporal_consistency_weight: 0.1
+
+# Phase 2 finetune
+finetune:
+  pretrained_ckpt: "checkpoints/phase1_best.pth"
+  lr: 1.0e-5
+  epochs: 30
+  freeze_backbone: false

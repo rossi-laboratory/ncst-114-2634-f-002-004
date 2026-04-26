@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+title: "Dynamic 4D Reconstruction"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - name: "NSTC Frontier AI Lab"
+abstract: >
+  4D dynamic scene reconstruction from monocular videos via 3D point tracking,
+  built around an ARM4R-style architecture for robot pretraining.
+license: MIT
+date-released: 2026-04-26
+version: 0.1.0
