@@ -229,7 +229,3 @@ python -m inference.export \
 MIT License — 詳見 [`LICENSE`](LICENSE)。
 
 ---
-
-## 致謝
-
-本研究由 **國科會（NSTC）前瞻 AI 專案** 支持。感謝鄭教授實驗室與所有共同合作之研究員。
