@@ -20,7 +20,9 @@ All methods are evaluated under identical settings, including input data, initia
 
 ## 2. Tracking Performance Distribution
 
-![Tracking Distribution](./Tracking1.png)
+<p align="center">
+  <img src="./Tracking1.png" width="70%">
+</p>
 
 Figure 1 presents the distribution of tracking success rates using a **violin + box plot visualization**, which provides a comprehensive view of both central tendency and distribution characteristics.
 
@@ -42,7 +44,9 @@ This result highlights a critical advantage of our approach:
 
 ## 3. Temporal Tracking Robustness
 
-![Temporal Robustness](./Tracking2.png)
+<p align="center">
+  <img src="./Tracking2.png" width="70%">
+</p>
 
 Figure 2 illustrates the temporal evolution of tracking performance over extended sequences. This evaluation is particularly important, as many methods perform well in short sequences but degrade over time due to accumulated errors.
 
